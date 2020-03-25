@@ -1,7 +1,10 @@
-import cv2,os
-import numpy as np
-import csv
+﻿from __future__ import division, print_function
+# coding=utf-8
+import sys
+import os
 import glob
+import re
+import numpy as np
 
 label = "Parasitized"
 dirList = glob.glob("cell_images/"+label+"/*.png")
