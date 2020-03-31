@@ -1,10 +1,7 @@
-﻿from __future__ import division, print_function
-# coding=utf-8
-import sys
-import os
-import glob
-import re
+import cv2,os
 import numpy as np
+import csv
+import glob
 
 label = "Parasitized"
 dirList = glob.glob("cell_images/"+label+"/*.png")
@@ -49,3 +46,4 @@ for img_path in dirList:
 
 
 cv2.waitKey(19000)
+
